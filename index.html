@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Platform — Login / Register</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container" id="page-index">
+    <div class="card auth-card">
+      <h1>Quiz Platform</h1>
+      <div class="tabs">
+        <button id="tab-login" class="tab active">Login</button>
+        <button id="tab-register" class="tab">Register</button>
+      </div>
+
+      <form id="login-form" class="form">
+        <label>Username or Email
+          <input id="login-identifier" required />
+        </label>
+        <label>Password
+          <input id="login-password" type="password" required />
+        </label>
+        <div class="actions">
+          <button type="submit" class="btn primary">Login</button>
+          <a id="go-dashboard" class="btn ghost" href="dashboard.html">Dashboard</a>
+        </div>
+        <div id="login-message" class="message"></div>
+      </form>
+
+      <form id="register-form" class="form hidden">
+        <label>Username
+          <input id="reg-username" required />
+        </label>
+        <label>Email
+          <input id="reg-email" type="email" required />
+        </label>
+        <label>Password
+          <input id="reg-password" type="password" required />
+        </label>
+        <div class="actions">
+          <button type="submit" class="btn">Register</button>
+        </div>
+        <div id="reg-message" class="message"></div>
+      </form>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    // index-specific initialization done by app.js on DOMContentLoaded
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="logo">QuizPlatform</a>
+    <div id="user-controls"></div>
+  </header>
+
+  <main class="container" id="page-dashboard">
+    <div class="card">
+      <div class="row" style="justify-content:space-between;align-items:center">
+        <h1>Your Quizzes</h1>
+        <button id="create-quiz-btn" class="btn primary">+ Create Quiz</button>
+      </div>
+      <div id="my-quizzes"></div>
+    </div>
+
+    <div class="card">
+      <h2>All Results</h2>
+      <div class="row controls">
+        <label>Filter
+          <select id="filter-quiz"><option value="">All</option></select>
+        </label>
+        <label>Sort
+          <select id="sort-results">
+            <option value="newest">Newest</option>
+            <option value="score-desc">Score ↓</option>
+            <option value="score-asc">Score ↑</option>
+            <option value="participant">Participant</option>
+          </select>
+        </label>
+      </div>
+      <div id="results-table"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+    

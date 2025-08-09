@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="logo">QuizPlatform</a>
+    <div id="user-controls"></div>
+  </header>
+
+  <main class="container" id="page-create">
+    <div class="card create-card">
+      <h1>Create Quiz</h1>
+      <label>Quiz Title
+        <input id="quiz-title" placeholder="E.g., JS Basics" />
+      </label>
+
+      <div id="questions-wrapper"></div>
+
+      <div class="row" style="margin-top:12px">
+        <button id="add-question" class="btn">+ Add Question</button>
+        <button id="save-quiz" class="btn primary">Save & Generate Link</button>
+      </div>
+
+      <div id="link-output" class="message"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

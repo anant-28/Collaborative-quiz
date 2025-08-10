@@ -37,5 +37,7 @@ quiz-platform/
 ├── quiz.html # Quiz attempt page
 ├── styles.css # Stylesheet
 ├── script.js # Main JavaScript logic
+├──take.html # take quiz
+
 
 
